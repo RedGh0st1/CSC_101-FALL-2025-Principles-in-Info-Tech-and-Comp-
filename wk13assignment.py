@@ -23,16 +23,19 @@ def perform_operation(operation, value1, value2):
     if operation == "+": return value1 + value2
 
     # check if the operation is subtraction
-    elif operation == "-": return value1 - value2
+    elif operation == "-": return abs(value1 - value2)
     
     # check if the operation is division
     elif operation =="/":return value1/value2
 
     # check if the operation is multiplication
-    elif operation == "*": return value1 * value2
-
+    elif operation == "*": return abs(value1 * value2)
+  #  if the operation is not valid return "Invalid entry"
     else: return "Invalid entry"
 
 
 
-perform_operation("+", 4, 10)
+print(perform_operation("+", 4, 10))
+print(perform_operation("-", 4, 10))
+print(perform_operation("*", 4, 10))
+print(perform_operation("/", 5, 10))
