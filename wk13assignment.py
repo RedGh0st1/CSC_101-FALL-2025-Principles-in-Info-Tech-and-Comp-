@@ -30,6 +30,7 @@ def perform_operation(operation, value1, value2):
 
     # check if the operation is multiplication
     elif operation == "*": return abs(value1 * value2)
+    
   #  if the operation is not valid return "Invalid entry"
     else: return "Invalid entry"
 
